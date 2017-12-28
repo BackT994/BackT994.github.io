@@ -4,10 +4,54 @@
     
     <entry>
       <title><![CDATA[Hello World]]></title>
-      <url>/2017/09/24/hello-world/</url>
-      <content type="html"><![CDATA[<p>#hellow ，你好</p>
+      <url>/2017/10/12/hello-world/</url>
+      <content type="html"><![CDATA[<h1 id="hellow-，你好"><a href="#hellow-，你好" class="headerlink" title="hellow ，你好"></a>hellow ，你好</h1>]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Linux防火墙-firewall]]></title>
+      <url>/2017/09/30/linux-firewall/</url>
+      <content type="html"><![CDATA[<h2 id="Linux-防火墙-firewall-基本操作命令"><a href="#Linux-防火墙-firewall-基本操作命令" class="headerlink" title="Linux 防火墙-firewall 基本操作命令"></a>Linux 防火墙-firewall 基本操作命令</h2><h3 id="firewall-service-基本操作命令"><a href="#firewall-service-基本操作命令" class="headerlink" title="firewall service 基本操作命令"></a>firewall service 基本操作命令</h3><ul>
+<li>启动服务 ：systemctl start firewalld.service</li>
+<li>查看状态 ：systemctl status firewalld.service</li>
+<li>停止服务 ：systemctl disable firewalld.service</li>
+<li>禁止服务 ：systemctl stop firewalld.service</li>
+<li>重启一个服务：systemctl restart firewalld.service</li>
+<li>显示一个服务的状态：systemctl status firewalld.service</li>
+<li>在开机时启用一个服务：systemctl enable firewalld.service</li>
+<li>在开机时禁用一个服务：systemctl disable firewalld.service</li>
+<li>查看服务是否开机启动：systemctl is-enabled firewalld.service</li>
+<li>查看已启动的服务列表：systemctl list-unit-files|grep enabled</li>
+<li>查看启动失败的服务列表：systemctl –failed</li>
+</ul>
+<h3 id="firewall-cmd-操作命令"><a href="#firewall-cmd-操作命令" class="headerlink" title="firewall-cmd 操作命令"></a>firewall-cmd 操作命令</h3><ul>
+<li>查看版本： firewall-cmd –version</li>
+<li>查看帮助： firewall-cmd –help</li>
+<li>显示状态： firewall-cmd –state</li>
+<li>查看所有打开的端口： firewall-cmd –zone=public –list-ports</li>
+<li>更新防火墙规则： firewall-cmd –reload</li>
+<li>查看区域信息:  firewall-cmd –get-active-zones</li>
+<li>查看指定接口所属区域： firewall-cmd –get-zone-of-interface=eth0</li>
+<li>拒绝所有包：firewall-cmd –panic-on</li>
+<li>取消拒绝状态： firewall-cmd –panic-off</li>
+<li>查看是否拒绝： firewall-cmd –query-panic</li>
+<li>查看所有开放的端口：firewall-cmd –zone=public –list-ports</li>
+<li>添加端口： firewall-cmd –zone=public –add-port=8080/tcp –perment(该参数是设置永久生效)</li>
+<li>重启服务： firewall-cmd –reload</li>
+<li>删除端口： firewall-cmd –zone=public –remove-port=8080/tcp –perment</li>
+</ul>
 ]]></content>
       
+        
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> 防火墙 </tag>
+            
+        </tags>
         
     </entry>
     

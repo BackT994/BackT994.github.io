@@ -53,7 +53,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="linux,防火墙," />
 
 
 
@@ -69,17 +69,18 @@
 
 
 
-<meta name="description" content="#hellow ，你好">
+<meta name="description" content="Linux 防火墙-firewall 基本操作命令firewall service 基本操作命令 启动服务 ：systemctl start firewalld.service 查看状态 ：systemctl status firewalld.service 停止服务 ：systemctl disable firewalld.service 禁止服务 ：systemctl stop firewal">
+<meta name="keywords" content="linux,防火墙">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/09/24/hello-world/index.html">
-<meta property="og:site_name" content="Hellow">
-<meta property="og:description" content="#hellow ，你好">
+<meta property="og:title" content="Linux防火墙-firewall">
+<meta property="og:url" content="http://yoursite.com/2017/09/30/linux-firewall/index.html">
+<meta property="og:site_name" content="半      步">
+<meta property="og:description" content="Linux 防火墙-firewall 基本操作命令firewall service 基本操作命令 启动服务 ：systemctl start firewalld.service 查看状态 ：systemctl status firewalld.service 停止服务 ：systemctl disable firewalld.service 禁止服务 ：systemctl stop firewal">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-24T13:47:12.972Z">
+<meta property="og:updated_time" content="2017-12-28T18:15:09.635Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="#hellow ，你好">
+<meta name="twitter:title" content="Linux防火墙-firewall">
+<meta name="twitter:description" content="Linux 防火墙-firewall 基本操作命令firewall service 基本操作命令 启动服务 ：systemctl start firewalld.service 查看状态 ：systemctl status firewalld.service 停止服务 ：systemctl disable firewalld.service 禁止服务 ：systemctl stop firewal">
 
 
 
@@ -109,13 +110,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/09/24/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/09/30/linux-firewall/"/>
 
 
 
 
 
-  <title>Hello World | Hellow</title>
+  <title>Linux防火墙-firewall | 半      步</title>
   
 
 
@@ -145,12 +146,12 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hellow</span>
+        <span class="site-title">半      步</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle">一个不正经的程序候儿</p>
+        <p class="site-subtitle">偷得浮生半日闲，窃取时间半步多</p>
       
   </div>
 
@@ -276,7 +277,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/24/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/30/linux-firewall/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Backt">
@@ -285,7 +286,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hellow">
+      <meta itemprop="name" content="半      步">
     </span>
 
     
@@ -293,7 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">Linux防火墙-firewall</h1>
         
 
         <div class="post-meta">
@@ -305,8 +306,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-24T21:47:12+08:00">
-                2017-09-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-30T14:25:32+08:00">
+                2017-09-30
               </time>
             
 
@@ -343,7 +344,35 @@
       
 
       
-        <p>#hellow ，你好</p>
+        <h2 id="Linux-防火墙-firewall-基本操作命令"><a href="#Linux-防火墙-firewall-基本操作命令" class="headerlink" title="Linux 防火墙-firewall 基本操作命令"></a>Linux 防火墙-firewall 基本操作命令</h2><h3 id="firewall-service-基本操作命令"><a href="#firewall-service-基本操作命令" class="headerlink" title="firewall service 基本操作命令"></a>firewall service 基本操作命令</h3><ul>
+<li>启动服务 ：systemctl start firewalld.service</li>
+<li>查看状态 ：systemctl status firewalld.service</li>
+<li>停止服务 ：systemctl disable firewalld.service</li>
+<li>禁止服务 ：systemctl stop firewalld.service</li>
+<li>重启一个服务：systemctl restart firewalld.service</li>
+<li>显示一个服务的状态：systemctl status firewalld.service</li>
+<li>在开机时启用一个服务：systemctl enable firewalld.service</li>
+<li>在开机时禁用一个服务：systemctl disable firewalld.service</li>
+<li>查看服务是否开机启动：systemctl is-enabled firewalld.service</li>
+<li>查看已启动的服务列表：systemctl list-unit-files|grep enabled</li>
+<li>查看启动失败的服务列表：systemctl –failed</li>
+</ul>
+<h3 id="firewall-cmd-操作命令"><a href="#firewall-cmd-操作命令" class="headerlink" title="firewall-cmd 操作命令"></a>firewall-cmd 操作命令</h3><ul>
+<li>查看版本： firewall-cmd –version</li>
+<li>查看帮助： firewall-cmd –help</li>
+<li>显示状态： firewall-cmd –state</li>
+<li>查看所有打开的端口： firewall-cmd –zone=public –list-ports</li>
+<li>更新防火墙规则： firewall-cmd –reload</li>
+<li>查看区域信息:  firewall-cmd –get-active-zones</li>
+<li>查看指定接口所属区域： firewall-cmd –get-zone-of-interface=eth0</li>
+<li>拒绝所有包：firewall-cmd –panic-on</li>
+<li>取消拒绝状态： firewall-cmd –panic-off</li>
+<li>查看是否拒绝： firewall-cmd –query-panic</li>
+<li>查看所有开放的端口：firewall-cmd –zone=public –list-ports</li>
+<li>添加端口： firewall-cmd –zone=public –add-port=8080/tcp –perment(该参数是设置永久生效)</li>
+<li>重启服务： firewall-cmd –reload</li>
+<li>删除端口： firewall-cmd –zone=public –remove-port=8080/tcp –perment</li>
+</ul>
 
       
     </div>
@@ -358,6 +387,14 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/linux/" rel="tag"># linux</a>
+          
+            <a href="/tags/防火墙/" rel="tag"># 防火墙</a>
+          
+        </div>
       
 
       
@@ -377,6 +414,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/12/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -428,12 +469,21 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
             <p class="site-author-name" itemprop="name">Backt</p>
-            <p class="site-description motion-element" itemprop="description">描述</p>
+            <p class="site-description motion-element" itemprop="description">偷得浮生半日闲，半步不少亦不多</p>
         </div>
 
         <nav class="site-state motion-element">
@@ -443,7 +493,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -456,7 +506,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -481,6 +531,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-防火墙-firewall-基本操作命令"><span class="nav-number">1.</span> <span class="nav-text">Linux 防火墙-firewall 基本操作命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#firewall-service-基本操作命令"><span class="nav-number">1.1.</span> <span class="nav-text">firewall service 基本操作命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#firewall-cmd-操作命令"><span class="nav-number">1.2.</span> <span class="nav-text">firewall-cmd 操作命令</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
