@@ -176,7 +176,7 @@ mysql&gt; updata user set host=&apos;%&apos; where host=localhost and user=&apos
         
         <tags>
             
-            <tag> linxu </tag>
+            <tag> linux </tag>
             
             <tag> 环境，java </tag>
             
