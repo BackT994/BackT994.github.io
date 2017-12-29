@@ -53,7 +53,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="redis," />
 
 
 
@@ -69,16 +69,18 @@
 
 
 
-<meta name="description" content="偷得浮生半日闲，半步不少亦不多">
-<meta property="og:type" content="website">
-<meta property="og:title" content="半      步">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="redis 基本操作命令 set key value     设置key值 存在则覆盖 setnx key value              设置key值，若存在，则不操作 mset key1 value1 key2 value2 key3 value3       设置这些key值，若存在，则覆盖 msetnx key1 value1 key2 value2 key3 value3    设">
+<meta name="keywords" content="redis">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Redis学习二">
+<meta property="og:url" content="http://yoursite.com/2017/11/06/redis-learn-2/index.html">
 <meta property="og:site_name" content="半      步">
-<meta property="og:description" content="偷得浮生半日闲，半步不少亦不多">
+<meta property="og:description" content="redis 基本操作命令 set key value     设置key值 存在则覆盖 setnx key value              设置key值，若存在，则不操作 mset key1 value1 key2 value2 key3 value3       设置这些key值，若存在，则覆盖 msetnx key1 value1 key2 value2 key3 value3    设">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-12-29T06:04:37.397Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="半      步">
-<meta name="twitter:description" content="偷得浮生半日闲，半步不少亦不多">
+<meta name="twitter:title" content="Redis学习二">
+<meta name="twitter:description" content="redis 基本操作命令 set key value     设置key值 存在则覆盖 setnx key value              设置key值，若存在，则不操作 mset key1 value1 key2 value2 key3 value3       设置这些key值，若存在，则覆盖 msetnx key1 value1 key2 value2 key3 value3    设">
 
 
 
@@ -108,13 +110,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/11/06/redis-learn-2/"/>
 
 
 
 
 
-  <title>归档 | 半      步</title>
+  <title>Redis学习二 | 半      步</title>
   
 
 
@@ -133,7 +135,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -261,296 +263,201 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/06/redis-learn-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Backt">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="半      步">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">Redis学习二</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-06T00:00:00+08:00">
+                2017-11-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 7 篇日志。 继续努力。
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/redis/" itemprop="url" rel="index">
+                    <span itemprop="name">redis</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2017">2017</h1>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/06/redis-learn-1/" itemprop="url">
-              
-                <span itemprop="name">Redis学习一</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-06T00:00:00+08:00"
-              content="2017-11-06" >
-          11-06
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/06/redis-learn-2/" itemprop="url">
-              
-                <span itemprop="name">Redis学习二</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-06T00:00:00+08:00"
-              content="2017-11-06" >
-          11-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/10/29/coentos-forget-pw/" itemprop="url">
-              
-                <span itemprop="name">centos 忘记密码</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-29T10:24:45+08:00"
-              content="2017-10-29" >
-          10-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h3 id="redis-基本操作命令"><a href="#redis-基本操作命令" class="headerlink" title="redis 基本操作命令"></a>redis 基本操作命令</h3><ul>
+<li>set key value     设置key值 存在则覆盖</li>
+<li>setnx key value              设置key值，若存在，则不操作</li>
+<li>mset key1 value1 key2 value2 key3 value3       设置这些key值，若存在，则覆盖</li>
+<li>msetnx key1 value1 key2 value2 key3 value3    设置这些key值，若存在，则不操作</li>
+<li>append key value    像key的字符串追加拼接</li>
+<li>Rename key     重命名key</li>
+<li>Get key    获取key值</li>
+<li>Getset key value    获取key值并重新赋值</li>
+<li>Del key    删除key值 数据不存在返回 nil</li>
+<li>Incr key    原子的+1</li>
+<li>Decr key    原子的-1</li>
+<li>Expire key 时间    设置多长时间后过期</li>
+<li>Ttl key    查询还有多长时间过期，存活多久</li>
+<li>Persist key    取消过期时间</li>
+</ul>
+<h3 id="有序集合List"><a href="#有序集合List" class="headerlink" title="有序集合List"></a>有序集合List</h3><ul>
+<li>Rpush keyList value    list中添加元素，右边添加</li>
+<li>Lpush keyList value    list中添加元素，左边添加</li>
+<li>Lrange keyList beginIndex endIndex    取出list中的元素，如果endIndex 为-1 则代表全部</li>
+<li>Llen keyList     获取keylist的大小</li>
+<li>Lpop keyList    取除并移除List的作左边的第一个元素</li>
+<li>Rpop keyList    取除并移除List的作左边的第一个元素</li>
+<li>Lindex key index    获取该列表该索引下的元素</li>
+<li>Lrem key count value    删除count个value，从头开始数 如果count为负，则从尾部删除，如果count为0 则删除全部</li>
+<li>Lset key index value     设置index索引下的value值，如果超出范围，则报错</li>
+<li>Ltrim key start end    删除索引外的所有数据</li>
+<li>RPOPLPUSH srckey dstkey    </li>
+</ul>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/10/20/soure-internet/" itemprop="url">
-              
-                <span itemprop="name">网络资源搜集</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-20T10:56:34+08:00"
-              content="2017-10-20" >
-          10-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/10/07/server-centos-env/" itemprop="url">
-              
-                <span itemprop="name">Centos 服务器环境部署</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-07T14:25:32+08:00"
-              content="2017-10-07" >
-          10-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/30/linux-firewall/" itemprop="url">
-              
-                <span itemprop="name">Linux防火墙-firewall</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-30T14:25:32+08:00"
-              content="2017-09-30" >
-          09-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/24/hexo-learn/" itemprop="url">
-              
-                <span itemprop="name">hexo 个人博客的搭建流程</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-24T10:25:10+08:00"
-              content="2017-09-24" >
-          09-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/redis/" rel="tag"># redis</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/29/coentos-forget-pw/" rel="next" title="centos 忘记密码">
+                <i class="fa fa-chevron-left"></i> centos 忘记密码
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/11/06/redis-learn-1/" rel="prev" title="Redis学习一">
+                Redis学习一 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -558,6 +465,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -578,8 +489,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
             <p class="site-author-name" itemprop="name">Backt</p>
@@ -640,6 +560,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#redis-基本操作命令"><span class="nav-number">1.</span> <span class="nav-text">redis 基本操作命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有序集合List"><span class="nav-number">2.</span> <span class="nav-text">有序集合List</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
